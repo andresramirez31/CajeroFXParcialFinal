@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <BorderPane fx:id="marco" prefHeight="600.0" prefWidth="400.0">
+         <top>
+            <MenuBar prefHeight="10.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Crear cuenta">
+                  <items>
+                    <MenuItem fx:id="btCrear" mnemonicParsing="false" onAction="#btCrear_accion" text="Abrir" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#btConsigna_accion" text="Consignaciones">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Abrir" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Retiros">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#btRetiro_accion" text="Abrir" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Transacciones">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#btTransaccion_accion" text="Abrir" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</GridPane>

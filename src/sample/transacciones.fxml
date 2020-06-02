@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Transacciones">
+   <children>
+      <VBox layoutX="-2.0" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <GridPane vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="120.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Identificacion de la cuenta" GridPane.rowIndex="1" />
+                  <Label text="Identificacion cuenta traslado" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtCuenta" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtCuentaT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtMonto" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Monto a transferir" GridPane.rowIndex="3" />
+                  <Button fx:id="btGuardar" mnemonicParsing="false" onMouseClicked="#btGuardar_click" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Text fill="#f80606" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaccion de cuenta">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
